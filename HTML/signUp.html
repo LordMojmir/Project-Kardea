@@ -23,15 +23,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
   <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
+    var firebaseConfig = {
       apiKey: "AIzaSyBbesJdLYATHmaf32Pr1t2ywYe-OUF0vTE",
       authDomain: "kardeaproject.firebaseapp.com",
       projectId: "kardeaproject",
@@ -40,10 +32,8 @@
       appId: "1:503148180035:web:d131ca0423a2cda9679af6",
       measurementId: "G-J6NK3C6N4C"
     };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    firebase.initializeApp(firebaseConfig);
+  
   </script>
 
   <script src="JavaScript/signUp.js" defer></script>
@@ -331,8 +321,6 @@
     <div style="justify-content: center; text-align: center;">
       <br>
       <button id="signOutBtn" class="btn btn-primary">Abmelden</button>
-    </div>
-    </div>
     </div>
   </section>
 
