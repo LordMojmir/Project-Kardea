@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background: rgb(103,255,225);
+    background: linear-gradient(45deg, rgba(103,255,225,1) 0%, rgba(17,117,182,1) 82%);
+    overflow-x: hidden;
+    background-color: beige;
+}
+p, .text {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+}
+
+#background-img {
+    --img: url('https://cdn0.erstegroup.com/gemlip/v1/dam/2vtXH7Th4ZbSWP9K6Ax3muVD6nXa/at/spk-sgruppe/www_sparkasse_at/service/finanzbildung/w1200_0_0_0_0_0_m_1634118311656.finanzbildung_hero_mobile_1024x768.jpg');
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    pointer-events: none;
+    
+}
+.img-shadow {
+    box-shadow: #f2f2f274 0 .2rem;
+}
+/*
+.content {
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+}
+*/
+.pic-content {
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 25%;
+    transform: translateY(-25%);
+    font-size: 3rem;
+}
+.content {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.content-left {
+    float: left;
+}
+.content-right {
+    flex-direction: row;
+}
+.content-line {
+    padding: 3rem 6rem;
+    padding-bottom: 0;
+}
+
+.content-pic {
+    width: 100%;
+}
+.col-pic {
+    padding: 0 !important;
+    display: flex;
+}
+/*
+.col-pic img {
+    position: relative;
+}
+*/
+.col-pic-top {
+    align-items: flex-end;
+}
+.col-pic-bottom {
+    align-items: flex-start;
+}
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.round-c-rb {
+    border-bottom-right-radius: 25%;
+}
+.round-c-rt {
+    border-top-right-radius: 25%;
+}
+.round-c-lt {
+    border-top-left-radius: 25%;
+}
+.round-c-lb {
+    border-bottom-left-radius: 25%;
+}
+@media screen and (max-width: 992px) {
+    .hide-on-size {
+        display: none;
+    }
+    p, text {
+        padding-top: 1.5rem;
+    }
+    .content-line {
+        padding: 1.5rem;
+    }
+    .content {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}   
+@media screen and (min-width: 993px) {
+    .list-group {
+        padding: 4.5rem !important;
+    }
+}
+.round-c {
+    border-radius: 2rem;
+}
+.border {
+    border: #f2f2f2 solid .1rem !important;
+}
+.bg-grey {
+    background-color: #ffffffbb;
+}
+.pad-b {
+    padding-bottom: 3rem;
+}
