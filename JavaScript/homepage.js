@@ -9,14 +9,14 @@ function loadCard(title, content, img){
                     <div class="col-md-3">
                         <div class=""> 
                             <img src="${img}"
-                                alt="img not loaded" width="100%">
+                                alt="img not loaded" width="100%" class="rounded">
                         </div>
                     </div>
                     <div class="col-md-9">
                         <h3 class="card-title text-center mb-3">${title}</h3>
                         <p class="card-text">${content}</p>
                         <div class="text-center">
-                        <a href="${title}.html" class="btn btn-dark" style="color: #fff; border-color: transparent;">
+                        <a href="../HTML/${title}.html" class="btn btn-dark" style="color: #fff; border-color: transparent;">
                             Mehr Erfahren
                         </a>
                     </div>
@@ -27,7 +27,7 @@ function loadCard(title, content, img){
     </div>
 </div>
     `;
-    cardContant.innerHTML += result;
+    document.getElementById('cardContent').innerHTML += result;
 }
 function onLoaded() {
     loadCard("Praktikum", "Freiwelliges und Pflichtpraktikum", "https://th.bing.com/th/id/OIP.sWSPghjzvfUYfQpqXbo37wHaIo?pid=ImgDet&rs=1")
