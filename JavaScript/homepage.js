@@ -2,7 +2,7 @@ function loadCard(title, content, img){
 
     result = `
     <div class="col-md-12 mb-sm-12 m-3">
-    <div class="card bg-light text-dark h-100">
+    <div class="card bg-light text-dark h-100 gradient-border   ">
         <div class="card-body ">
             <div class="container">
                 <div class="row">
