@@ -12,37 +12,21 @@
 
     <title>Home</title>
 </head>
-<style>
-    
-/*
-    .navbar {
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-    */
-</style>
-</head>
 
 <body>
+    
     <div id="background-img" class="img-shadow">
-        <nav id="navbar" class="navbar navbar-expand-sm bg-dark"></nav>
+        <nav id="navbar" class="navbar navbar-expand-sm bg-dark">
+        </nav>
 
         <div class="pic-content">
             <h2>Finanzbildung+</h2>
             <p>Some content here...</p>
         </div>
     </div>
-    <div>
-        <p style="text-align: center; margin: 10vw;">
+
+    <div class="container mt-5 reveal">
+        <p class="text-center gradient-border p-4">
             Deine Schule verlangt ein Praktikum von dir oder du möchtest dein Taschengeld aufbessern und bist dafür
             sogar bereit einen Teil deiner Ferien oder deiner Freizeit zu investieren? Dann hast dich sicher bereits
             gefragt welche Möglichkeiten dir als Kind oder Jugendlicher zur Verfügung stehen um in die Berufswelt
@@ -51,10 +35,26 @@
             steuerlichen Aspekte der einzelnen Optionen informiert.
         </p>
     </div>
-    <div>
-        <section class="p-5">
-            <div class="container p-4 mt-4 rounded">
-                <!-- <div class="col-md-12 mb-sm-12 m-3">
+
+    <div class="mt-5">
+        <section class="my-5">
+            <div class="container mt-4">
+                <div id="cardContent" class=""></div>
+            </div>
+        </section>
+        <footer class="footer bg-dark text-light text-center p-5">
+            © 2023 -
+            <a href="../HTML/impressum.html" class="text-light link">Impressum</a>
+        </footer>
+
+    </div>
+    <script src="../JavaScript/navbar.js"></script>
+    <script src="../JavaScript/revealContent.js"></script>
+</body>
+<script src="../JavaScript/homepage.js" defer></script>
+
+</html>
+ <!-- <div class="col-md-12 mb-sm-12 m-3">
                     <div class="card bg-light text-dark h-100">
                         <div class="card-body ">
                             <div class="container">
@@ -102,18 +102,3 @@
                         </div>
                     </div>
                 </div> -->
-                <div id="cardContent">
-
-                </div>
-            </div>
-        </section>
-        <footer class="footer bg-dark text-light text-center p-5">
-            © 2023 -
-            <a href="../HTML/impressum.html" class="text-light link">Impressum</a>
-        </footer>
-
-    </div>
-</body>
-<script src="../JavaScript/homepage.js" defer></script>
-<script src="../JavaScript/navbar.js" defer></script>
-</html>
