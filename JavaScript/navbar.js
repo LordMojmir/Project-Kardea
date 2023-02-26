@@ -1,10 +1,10 @@
 document.getElementById('navbar').innerHTML = `
-<nav class="navbar navbar-expand-sm bg-dark">
+
 <div class="container-fluid">
     <a class="navbar-brand text-light" href="../HTML/homepage.html">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
         data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <i class="bi bi-list text-white navbar-toggler-icon"></i>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
@@ -18,12 +18,15 @@ document.getElementById('navbar').innerHTML = `
                 <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">Infos</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./Praktikum.html">Praktikum</a></li>
-                    <li><a class="dropdown-item" href="#">Sommerjob</a></li>
-                    <li><a class="dropdown-item" href="#">Nebenjob</a></li>
-                    <li><a class="dropdown-item" href="#">Aushilfarbeiten</a></li>
+                    <li><a class="dropdown-item" href="./Sommerjob.html">Sommerjob</a></li>
+                    <li><a class="dropdown-item" href="./Nebenjob.html">Nebenjob</a></li>
+                    <li><a class="dropdown-item" href="./Aushilfarbeit.html">Aushilfarbeiten</a></li>
                 </ul>
             </li>
         </ul>
     </div>
 </div>
-</nav>`
+`
+
+//<nav class="navbar navbar-expand-sm bg-dark">
+//</nav>
