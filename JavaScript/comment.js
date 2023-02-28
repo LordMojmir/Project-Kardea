@@ -40,7 +40,7 @@ function getLeftComment(username, comment, details) {
   let result = `
   <div class="comment gradient-border reveal">
                 <div id="" class="com-writer">${username}</div>
-                <div id="" class="com-writer">${details}</div>
+                <div id="" class="com-data">${details}</div>
                 <div id="" class="com-text">
                   ${comment}  
                 </div>
@@ -52,7 +52,7 @@ function getRightComment(username, comment, details) {
   let result = `
              <div class="comment gradient-border reveal">
                 <div id="" class="com-writer">${username}</div>
-                <div id="" class="com-writer">${details}</div>
+                <div id="" class="com-data">${details}</div>
                 <div id="" class="com-text">
                   ${comment}
                 </div>
@@ -67,5 +67,5 @@ window.onload = function () {
 function reloadPage() {
   setTimeout(function() {
     location.reload();
-  }, 5000);
+  }, 2000);
 }
