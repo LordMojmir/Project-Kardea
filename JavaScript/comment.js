@@ -39,8 +39,10 @@ function displayComments() {
 function getLeftComment(username, comment, details) {
   let result = `
   <div class="comment gradient-border reveal">
-                <div id="" class="com-writer">${username}</div>
-                <div id="" class="com-data">${details}</div>
+                <div class="com-info">  
+                  <div id="" class="com-writer">${username}</div>
+                  <div id="" class="com-data">${details}</div>
+                </div>
                 <div id="" class="com-text">
                   ${comment}  
                 </div>
@@ -49,10 +51,13 @@ function getLeftComment(username, comment, details) {
 }
 
 function getRightComment(username, comment, details) {
+  console.log("Updating comment");
   let result = `
              <div class="comment gradient-border reveal">
+             <div class="com-info">  
                 <div id="" class="com-writer">${username}</div>
                 <div id="" class="com-data">${details}</div>
+              </div>
                 <div id="" class="com-text">
                   ${comment}
                 </div>
@@ -65,7 +70,7 @@ window.onload = function () {
 };
 
 function reloadPage() {
-  setTimeout(function() {
+  setTimeout(function () {
     location.reload();
   }, 2000);
 }
