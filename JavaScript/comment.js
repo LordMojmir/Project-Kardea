@@ -65,5 +65,7 @@ window.onload = function () {
 };
 
 function reloadPage() {
-  location.reload();
+  setTimeout(function() {
+    location.reload();
+  }, 5000);
 }
