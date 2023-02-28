@@ -9,7 +9,29 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c67e7c5118.js" crossorigin="anonymous"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBbesJdLYATHmaf32Pr1t2ywYe-OUF0vTE",
+            authDomain: "kardeaproject.firebaseapp.com",
+            databaseURL: "https://kardeaproject-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "kardeaproject",
+            storageBucket: "kardeaproject.appspot.com",
+            messagingSenderId: "503148180035",
+            appId: "1:503148180035:web:d131ca0423a2cda9679af6",
+            measurementId: "G-J6NK3C6N4C"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <link rel="stylesheet" href="../CSS/styles.css">
 
     <title>Home</title>
@@ -34,10 +56,6 @@
 
         <div class="content-line gradient-border p-4 reveal">
             <h3 class="text-center mb-2">Verfasse ein Kommentar</h3>
-            <div class="form-group">
-                <label for="email" class="mx-2 mb-1">E-Mail *</label>
-                <input type="email" id="email" class="form-control" name="email" placeholder="Deine E-Mail" required>
-            </div>
 
             <div class="row mt-2">
                 <div class="form-group col-md-6">
@@ -48,6 +66,10 @@
                     <label for="name" class="mx-2 mb-1">Nachname</label>
                     <input type="text" name="surname" id="surname" class="form-control" placeholder="Dein Nachname">
                 </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="mx-2 mb-1">Mehr über dich</label>
+                <input type="email" id="detail" class="form-control" name="email" placeholder="Informationen über dich und deine Motivationen" required>
             </div>
             
 
@@ -60,16 +82,18 @@
                 <i>* sind verpflichtend auszufüllende Felder</i>
             </div>
             <div class="text-center">
-                <button id="send-comment" class="btn btn-dark mt-3">Absenden</button>
+                <button id="send-comment" class="btn btn-dark mt-3" onclick="addComment(); reloadPage();">Absenden</button>
             </div>
         </div>
     
     <div class="reveal">
         <h1 class="text-center mt-5">Comment Section</h1>
         <div id="comment-section" class="px5 py-3 mb-5">
-            
-            <div class="comment gradient-border reveal">
+
+            <!-- <div class="comment gradient-border reveal">
                 <div id="" class="com-writer">Paul Wenth</div>
+                <div id="" class="com-writer">15 Jahre</div>
+
                 <div id="" class="com-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ea iure accusantium reprehenderit, laborum eaque doloremque, autem minima qui omnis, pariatur quas. Adipisci sint vero provident. Alias omnis dolores sapiente!
                 </div>
@@ -80,7 +104,7 @@
                 <div id="" class="com-text">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ea iure accusantium reprehenderit, laborum eaque doloremque, autem minima qui omnis, pariatur quas. Adipisci sint vero provident. Alias omnis dolores sapiente!
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -96,6 +120,7 @@
 
     <script src="../JavaScript/navbar.js"></script>
     <script src="../JavaScript/revealContent.js"></script>
+    <script src="../JavaScript/comment.js"></script>
 </body>
 
 
