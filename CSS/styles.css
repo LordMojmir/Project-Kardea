@@ -223,7 +223,7 @@ img {
     text-decoration: none;
     color: inherit;
     transition: color .9s;
-    transition: scale .9s, color .9s, text-decortaion .5s, transform 1s ease;
+    transition: scale .9s, color .9s, text-decortaion .5s, transform 1s ease, opacity 1s ease;
 }
 .timeline a:hover {
     scale: 1.05;
