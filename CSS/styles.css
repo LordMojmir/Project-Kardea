@@ -7,7 +7,7 @@ body {
     background: rgb(103,255,225);
     background: linear-gradient(45deg, rgba(103,255,225,1) 0%, rgba(17,117,182,1) 82%);
     overflow-x: hidden;
-    background-color: rgb(103,255,225); 
+    background-color: rgba(17,117,182,1); 
     overflow-wrap: normal;   
 }
 p, .text {
@@ -30,7 +30,7 @@ img {
     position: relative;
 }
 .img-shadow {
-    box-shadow: #f2f2f274 0 .2rem;
+    box-shadow: #00000080 0 .1rem;
 }
 .pic-content {
     /*
@@ -38,7 +38,8 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     */
-    color: cadetblue;
+    color: navy !important;
+    text-shadow: rgba(0, 238, 255, 0.5) 3px 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,7 +218,7 @@ img {
 }
 .timeline a:hover {
     scale: 1.05;
-    color: blue;
+    color: white;
 }
 .timeline .timeline-item {
     /*width: 50%;*/
@@ -244,15 +245,16 @@ img {
 @media screen and (max-width: 500px) {
     .timeline .timeline-item:nth-child(even) {
         align-items: end;
-        margin-right: 25%;
+        margin-right: 20%;
+        margin-left: auto;
         text-align: right;
     }   
     .timeline .timeline-item:nth-child(odd) {
-        margin-right: 25%;
+        margin-right: 20%;
         margin-left: auto;
     } 
     .timeline::before {
-        right: 20%;
+        right: 17%;
     }
 }
 
@@ -274,12 +276,26 @@ img {
 .comment:nth-child(even) {
     margin-left: auto;
 }
-.com-writer {
-    font-size: 1.5rem;
+.com-info {
     width: 100%;
     border-bottom: grey solid 1px;
     padding-bottom: .5rem;
     padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+.com-writer {
+    font-size: 1.5rem;
+    display: inline;
+}
+.com-data {
+    font-size: 1rem;
+    float: right;
+    display: inline;
+    transform: translateY(25%);
+    /*
+    position: relative;
+    bottom: -.9rem;
+    */
 }
 .com-text {
     font-size: 1.3rem;
