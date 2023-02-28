@@ -1,14 +1,14 @@
 html {
-    overflow: visible;
+    overflow-y: visible;
 }
 body {
     margin: 0;
     padding: 0;
     background: rgb(103,255,225);
     background: linear-gradient(45deg, rgba(103,255,225,1) 0%, rgba(17,117,182,1) 82%);
-    overflow-x: hidden;
     background-color: rgba(17,117,182,1); 
-    overflow-wrap: normal;   
+
+    overflow-x: hidden;
 }
 p, .text {
     font-size: 1.5rem;
@@ -38,14 +38,22 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     */
-    color: navy !important;
-    text-shadow: rgba(0, 238, 255, 0.5) 3px 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
     height: 95vh;
+}
+.p-0 {
+    padding: 0;
+}
+.pic-content p {
+    font-size: 3rem;
+    color: white !important;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 2rem;
+    text-shadow: rgba(0, 238, 255, 0.5) 3px 3px;
+    padding: 0.7rem 1.5rem;
 }
 .content {
     /*
@@ -75,6 +83,7 @@ img {
 .col-pic {
     padding: 0 !important;
     display: flex;
+    overflow: hidden;
 }
 /*
 .col-pic img {
@@ -136,7 +145,7 @@ img {
 .reveal {
     transform: translateY(150px);
     opacity: 0;
-    transition: transform 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
 }
 .reveal.showContent {
     transform: translateY(0px);
