@@ -9,7 +9,7 @@ document.getElementById('navbar').innerHTML = `
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link text-light link" href="#">Steuern</a>
+                <a class="nav-link text-light link" href="HTML/Steuern.html">Steuern</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-light link" href="HTML/Kommentare.html">Kommentare</a>
